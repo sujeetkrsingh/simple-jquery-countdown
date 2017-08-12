@@ -1,6 +1,8 @@
 # Simple jQuery Countdown
 This is a very simple jQuery based countdown timer. You don't need to write any additional javascript code to make this plugin work.
 
+[Demo Link](https://sujeetkrsingh.github.io/simple-jquery-countdown/)
+
 ### Steps to install and setup plugin
 * Include jquery js file, countdown js and css files in your HTML file
 
