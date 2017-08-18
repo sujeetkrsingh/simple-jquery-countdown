@@ -63,5 +63,6 @@
 }(jQuery));
 
 jQuery(document).ready(function(){
-	jQuery(".countdown").countdown();
+	if(jQuery(".countdown").length>0)
+		jQuery(".countdown").countdown();
 })
