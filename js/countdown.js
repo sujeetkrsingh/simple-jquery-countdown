@@ -63,6 +63,10 @@
 }(jQuery));
 
 jQuery(document).ready(function(){
-	if(jQuery(".countdown").length>0)
-		jQuery(".countdown").countdown();
+	if(jQuery(".countdown").length>0){
+		jQuery(".countdown").each(function(){
+			jQuery(this).countdown();	
+		})
+		
+	}
 })
