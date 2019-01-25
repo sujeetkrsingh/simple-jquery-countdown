@@ -8,13 +8,18 @@ This is a very simple jQuery based countdown timer. You don't need to write any 
 
 ```javascript
 	<link rel="stylesheet" type="text/css" href="countdown.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="countdown.js"></script>
 ```
 * Create an empty div add add class <b>countdown</b>
-* Create an attribute <b>data-date</b> add provide date value in <b>YYYY-MM-DD</b> format
+* Create an attribute <b>data-date</b> and provide date value in <b>YYYY-MM-DD</b> format
 
 ```html
-	<div class='countdown' data-date="2018-01-01"></div>
+	<div class='countdown' data-date="2019-05-01"></div>
+```
+* You can also mention end time of the countdown. Create an attribute <b>data-time</b> and provide time value in <b>HH:MM</b> format. HH is the 24 hour format.
+
+```html
+	<div class='countdown' data-date="2019-05-01" data-time="18:30"></div>
 ```
 * That's it. The countdown is start working.

@@ -7,7 +7,10 @@
 	    
 	    var currentDate=new Date();
 	    var fieldDate=$(this).data('date').split('-');
-	    var futureDate=new Date(fieldDate[0],fieldDate[1]-1,fieldDate[2]);
+	    var fieldTime=[0,0];
+	    if($(this).data('time')!=undefined)
+	    fieldTime=$(this).data('time').split(':');
+	    var futureDate=new Date(fieldDate[0],fieldDate[1]-1,fieldDate[2],fieldTime[0],fieldTime[1]);
 	    var seconds=futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
 	    if(seconds<=0 || isNaN(seconds)){
